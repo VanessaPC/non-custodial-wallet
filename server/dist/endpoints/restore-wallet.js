@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.RestoreWallet=void 0;var _helpers=require("./helpers");const RestoreWallet=phrase=>{try{const{publicKey,privateKey}=(0,_helpers.getHDmasterKeyFromMnemonic)(phrase);const privKey=privateKey===null||privateKey===void 0?void 0:privateKey.toString("hex");const address=(0,_helpers.getETHAddress)(publicKey);return{privKey,address}}catch(e){throw e}};exports.RestoreWallet=RestoreWallet;
+//# sourceMappingURL=restore-wallet.js.map

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/constants.ts"],"names":["API","CREATE_WALLET","RESTORE_WALLET"],"mappings":"yFAAO,KAAMA,CAAAA,GAAG,CAAG,CACjBC,aAAa,CAAE,oBADE,CAEjBC,cAAc,CAAE,qBAFC,CAAZ,C","sourcesContent":["export const API = {\n  CREATE_WALLET: \"/api/create-wallet\",\n  RESTORE_WALLET: \"/api/restore-wallet\",\n};\n"],"file":"constants.js"}

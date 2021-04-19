@@ -1,0 +1,2 @@
+"use strict";Object.defineProperty(exports,"__esModule",{value:true});exports.CreateWallet=void 0;var _helpers=require("./helpers");const CreateWallet=()=>{const{phrase,seed}=(0,_helpers.createMnemonic)();const{publicKey,privateKey}=(0,_helpers.createHDmasterKey)(seed);if(privateKey===null){throw new Error("User's private key is null.")}const privKey=privateKey.toString("hex");const address=(0,_helpers.getETHAddress)(publicKey);return{phrase,privKey,address}};exports.CreateWallet=CreateWallet;
+//# sourceMappingURL=create-wallet.js.map

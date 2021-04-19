@@ -1,0 +1,10 @@
+export const WHITE = "#fff";
+export const OFF_WHITE = "#eee";
+export const BLACK = "#000";
+export const BLACK_10 = "#222";
+export const BLUE = "aquamarine";
+export const PIZARRA = "#374954";
+export const GREEN_CTA = "#6BBE92";
+export const BLUE_CTA = "#7fffD4";
+export const ORANGE = " #ed9121";
+export const WARNING = "#FF4500";

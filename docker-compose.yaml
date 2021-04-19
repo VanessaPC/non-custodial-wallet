@@ -9,14 +9,17 @@ services:
       dockerfile: Dockerfile.dev
       context: ./nginx
     ports:
-      - "3050:80"
+      - 3050:80
   api:
     build:
       dockerfile: Dockerfile.dev
       context: ./server
     volumes:
       - /app/node_modules
+      - /app/dist
       - ./server:/app
+    ports:
+      - 5000:80
   client:
     stdin_open: true
     build:
